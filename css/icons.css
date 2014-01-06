@@ -1,0 +1,78 @@
+#contacts .social li.amazon > 		a { background-image: url(../img/social/amazon.png) 	}
+#contacts .social li.android > 		a { background-image: url(../img/social/android.png) 	}
+#contacts .social li.apple > 		a { background-image: url(../img/social/apple.png)		}
+#contacts .social li.appstore > 	a { background-image: url(../img/social/appstore.png) 	}
+#contacts .social li.blogger > 		a { background-image: url(../img/social/blogger.png) 	}
+#contacts .social li.delicious > 	a { background-image: url(../img/social/delicious.png) 	}
+#contacts .social li.devianart > 	a { background-image: url(../img/social/devianart.png) 	}
+#contacts .social li.digg > 		a { background-image: url(../img/social/digg.png) 		}
+#contacts .social li.dribbble > 	a { background-image: url(../img/social/dribbble.png) 	}
+#contacts .social li.ebay > 		a { background-image: url(../img/social/ebay.png) 		}
+#contacts .social li.facebook > 	a { background-image: url(../img/social/facebook.png) 	}
+#contacts .social li.flickr > 		a { background-image: url(../img/social/flickr.png) 	}
+#contacts .social li.gplus > 		a { background-image: url(../img/social/gplus.png) 		}
+#contacts .social li.instagram > 	a { background-image: url(../img/social/instagram.png) 	}
+#contacts .social li.lastfm > 		a { background-image: url(../img/social/lastfm.png) 	}
+#contacts .social li.linkedin > 	a { background-image: url(../img/social/linkedin.png) 	}
+#contacts .social li.paypal > 		a { background-image: url(../img/social/paypal.png) 	}
+#contacts .social li.picasa > 		a { background-image: url(../img/social/picasa.png) 	}
+#contacts .social li.pinterest > 	a { background-image: url(../img/social/pinterest.png) 	}
+#contacts .social li.rss > 			a { background-image: url(../img/social/rss.png) 		}
+#contacts .social li.skype > 		a { background-image: url(../img/social/skype.png) 		}
+#contacts .social li.soundcloud > 	a { background-image: url(../img/social/soundcloud.png) }
+#contacts .social li.tumblr > 		a { background-image: url(../img/social/tumblr.png) 	}
+#contacts .social li.twitter > 		a { background-image: url(../img/social/twitter.png) 	}
+#contacts .social li.twitter2 > 	a { background-image: url(../img/social/twitter2.png) 	}
+#contacts .social li.vimeo > 		a { background-image: url(../img/social/vimeo.png) 		}
+#contacts .social li.windows-new > 	a { background-image: url(../img/social/windows-new.png)}
+#contacts .social li.windows > 		a { background-image: url(../img/social/windows.png) 	}
+#contacts .social li.wordpress > 	a { background-image: url(../img/social/wordpress.png) 	}
+#contacts .social li.yahoo > 		a { background-image: url(../img/social/yahoo.png) 		}
+#contacts .social li.youtube > 		a { background-image: url(../img/social/youtube.png) 	}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	   only screen and (   min--moz-device-pixel-ratio: 2),
+	   only screen and (     -o-min-device-pixel-ratio: 2/1),
+	   only screen and (        min-device-pixel-ratio: 2),
+	   only screen and (                min-resolution: 192dpi),
+	   only screen and (                min-resolution: 2dppx) { 
+   
+#contacts .social li.amazon > 		a { background-image: url(../img/social/amazon@2x.png) 		}
+#contacts .social li.android > 		a { background-image: url(../img/social/android@2x.png) 	}
+#contacts .social li.apple > 		a { background-image: url(../img/social/apple@2x.png)		}
+#contacts .social li.appstore > 	a { background-image: url(../img/social/appstore@2x.png) 	}
+#contacts .social li.blogger > 		a { background-image: url(../img/social/blogger@2x.png) 	}
+#contacts .social li.delicious > 	a { background-image: url(../img/social/delicious@2x.png) 	}
+#contacts .social li.devianart > 	a { background-image: url(../img/social/devianart@2x.png) 	}
+#contacts .social li.digg > 		a { background-image: url(../img/social/digg@2x.png) 		}
+#contacts .social li.dribbble > 	a { background-image: url(../img/social/dribbble@2x.png) 	}
+#contacts .social li.ebay > 		a { background-image: url(../img/social/ebay@2x.png) 		}
+#contacts .social li.facebook > 	a { background-image: url(../img/social/facebook@2x.png) 	}
+#contacts .social li.flickr > 		a { background-image: url(../img/social/flickr@2x.png) 		}
+#contacts .social li.gplus > 		a { background-image: url(../img/social/gplus@2x.png) 		}
+#contacts .social li.instagram > 	a { background-image: url(../img/social/instagram@2x.png) 	}
+#contacts .social li.lastfm > 		a { background-image: url(../img/social/lastfm@2x.png) 		}
+#contacts .social li.linkedin > 	a { background-image: url(../img/social/linkedin@2x.png) 	}
+#contacts .social li.paypal > 		a { background-image: url(../img/social/paypal@2x.png) 		}
+#contacts .social li.picasa > 		a { background-image: url(../img/social/picasa@2x.png) 		}
+#contacts .social li.pinterest > 	a { background-image: url(../img/social/pinterest@2x.png) 	}
+#contacts .social li.rss > 			a { background-image: url(../img/social/rss@2x.png) 		}
+#contacts .social li.skype > 		a { background-image: url(../img/social/skype@2x.png) 		}
+#contacts .social li.soundcloud > 	a { background-image: url(../img/social/soundcloud@2x.png) 	}
+#contacts .social li.tumblr > 		a { background-image: url(../img/social/tumblr@2x.png) 		}
+#contacts .social li.twitter > 		a { background-image: url(../img/social/twitter@2x.png) 	}
+#contacts .social li.twitter2 > 	a { background-image: url(../img/social/twitter2@2x.png) 	}
+#contacts .social li.vimeo > 		a { background-image: url(../img/social/vimeo@2x.png) 		}
+#contacts .social li.windows-new > 	a { background-image: url(../img/social/windows-new@2x.png)	}
+#contacts .social li.windows > 		a { background-image: url(../img/social/windows@2x.png) 	}
+#contacts .social li.wordpress > 	a { background-image: url(../img/social/wordpress@2x.png) 	}
+#contacts .social li.yahoo > 		a { background-image: url(../img/social/yahoo@2x.png) 		}
+#contacts .social li.youtube > 		a { background-image: url(../img/social/youtube@2x.png) 	}
+
+	#contacts .social li > a { 
+		-webkit-background-size: 32px;
+		   -moz-background-size: 32px;
+		     -o-background-size: 32px;
+				background-size: 32px;
+	}
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Manual of Skyline - HI'ARN</title>
+		
+		<style>*{margin:0;padding:0;outline:0;border:0}html,body{width:100%;height:100%;font:1em 'Myriad Pro';color:#222}body{background:#DDD url(img/bg.png) fixed}#wrapper{margin:0 auto;width:768px;border-left:1px solid #CCC;border-right:1px solid #CCC;background:white;background-attachment:fixed;box-shadow:0 0 10px rgba(0,0,0,.3)}header{padding:20px;background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#EEE));background-image:-webkit-linear-gradient(top,#f5f5f5,#EEE);background-image:-moz-linear-gradient(top,#f5f5f5,#EEE);background-image:-o-linear-gradient(top,#f5f5f5,#EEE);background-image:linear-gradient(to bottom,#f5f5f5,#EEE);border-bottom:1px solid #CCC}ul#nav{margin-top:20px;list-style:none;text-align:left}ul#nav>li{display:inline}button.clean-gray{background-color:#eee;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#eee),color-stop(100%,#ccc));background-image:-webkit-linear-gradient(top,#eee,#ddd);background-image:-moz-linear-gradient(top,#eee,#ddd);background-image:-ms-linear-gradient(top,#eee,#ddd);background-image:-o-linear-gradient(top,#eee,#ddd);background-image:linear-gradient(top,#eee,#ddd);border:1px solid #ccc;border-bottom:1px solid #bbb;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color:#333;font:bold 11px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;line-height:1;margin:0 5px;padding:8px 10px;text-align:center;text-shadow:0 1px 0 #eee;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s}button.clean-gray:hover{background-color:#ddd;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ddd),color-stop(100%,#bbb));background-image:-webkit-linear-gradient(top,#ddd,#ccc);background-image:-moz-linear-gradient(top,#ddd,#ccc);background-image:-ms-linear-gradient(top,#ddd,#ccc);background-image:-o-linear-gradient(top,#ddd,#ccc);background-image:linear-gradient(top,#ddd,#ccc);border:1px solid #bbb;border-bottom:1px solid #999;cursor:pointer;text-shadow:0 1px 0 #ddd}button.clean-gray:active{border:1px solid #aaa;border-bottom:1px solid #888;-webkit-box-shadow:inset 0 0 5px -1px #aaa,0 1px 0 0 #eee;-moz-box-shadow:inset 0 0 5px -1px #aaa,0 1px 0 0 #eee;box-shadow:inset 0 0 5px -1px #aaa,0 1px 0 0 #eee}#hello>h1{font:600 7em 'Myriad Pro';padding:130px 180px 0;height:110px}#hello>p{margin:0;padding:0 185px!important;font-size:1.2em!important}#hello>button{margin:80px auto;display:block}section>h3{margin-bottom:15px;padding:15px 30px;background:#EEE;border-top:1px solid #CCC;border-bottom:1px solid #CCC}section>p{margin:10px 0;padding:0 20px}section>ol,section>ul{margin:10px 0;padding:0 30px}.alpha{margin-left:30px}.author{margin:0;padding:20px;width:270px;background:#EEE;border:1px solid #CCC;border-left:0;color:#444}img{max-width: 100%}</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
+<script>
+$(function(){
+	$('#hello').height($(window).height()-70)
+	
+	setTimeout(function(){
+		$('#miss-hello').animate({opacity: 1});
+	}, 100);
+	
+	$('#miss-hello').on('click', function() { goToByScroll('toc') });
+});
+
+function goToByScroll(id){
+	$('html,body').animate({scrollTop: $("#"+id).offset().top}, 400, 'swing');
+}
+</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			
+			<header>
+				<h2>Manual of "Skyline"</h2>
+			</header>
+			
+			<section id="hello">
+				
+				<h1>Hello.</h1>
+				<p>Let's start?</p>
+				
+				<button id="miss-hello" class="clean-gray" style="opacity:0">I'm ready!</button>
+			</section>
+			
+			
+			<section id="toc">
+				<h3>Table of Contents</h3>
+				
+				<ol class="alpha">
+					<li><a href="#how-to-install-theme">How to install the theme?</a></li>
+					<li><a href="#how-to-set-up-theme">How to set up the theme?</a></li>
+					<li><a href="#how-to-set-up-feedback">How to set up a subscription form?</a></li>
+					<li><a href="#twitter">How to set up a Twitter Widget?</a></li>
+					<li><a href="#structure">HTML structure</a></li>
+					<li><a href="#css">CSS</a></li>
+					<li><a href="#js">Javascript</a></li>
+					<li><a href="#credits">Sources and Credits</a></li>
+				</ol>
+				
+				
+				<p>&nbsp;</p>
+				<p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/romannovohackii">here</a>. Thank You so much!</p>
+				
+				<p>&nbsp;</p>
+				<p class="author">
+					Created: March 13, 2013<br>
+					By: Roman Novokhatskiy<br>
+					Email: <a href="mailto:romannovohackii@gmail.com">romannovohackii@gmail.com</a>
+				</p><p>&nbsp;</p>
+			</section>
+			
+			<section id="how-to-install-theme">
+				<h3>How to install the theme?</h3>
+				<p>After purchasing you'll find these files in archive:</p>
+				<img src="img/how-to-install-1.png">
+				<p>You need to upload these files on your server (without folder "doc").<br>
+				You've installed the theme.</p>
+				<p><strong>Warning</strong>! It's not WordPress theme and you need to install the theme separately from WordPress.</p>
+				<p>&nbsp;</p>
+			</section>
+			
+			<section id="how-to-set-up-theme">
+				<h3>How to set up the theme? - <a href="#toc">Top</a></h3>
+				<p>The theme has many settings. You can change them in "/js/config.js"</p>
+				<p>&nbsp;</p>
+				<p><strong>Some important settings:</strong></p>
+				
+				<p><em>1. Setup the countdown</em></p>
+				<p>Find the "end_date" and change the value of it by rules below</p>
+				<img src="img/how-to-set-up-theme-1.png">
+				<p><strong>Note!</strong> Don't forget to change the timezone to yours otherwise in other parts of the world the countdown will end before (or later) than you need.</p>
+				
+				<p>&nbsp;</p>
+				
+				<p><em>2. How to set the page which opens when countdown ends.</em></p>				
+				<p>You just need to change "expiry_goto" on the address of page which must be opens, when countdown ends.
+					 Or set "expiry_goto" equal "null" if you don't want open any page.
+				</p>
+				
+				<p>&nbsp;</p>
+				
+				<p><em>3. Add a new photo to the slider</em></p>
+				<p> - Upload to the "/img/slider/" any photo.</p>
+				<p> - In the "/js/config.js" add the name of photo to the "photos".</p>
+				<img src="img/how-to-set-up-theme-2.png">
+				<p> - That's all.</p>
+				
+				<p>&nbsp;</p>
+				
+				<p><em>4. Setup the Twitter</em></p>
+				<p>Just change the "username" on yours.</p>
+				<p>But if you want to disable the Twitter-widget, change the "enb" to "false"</p>
+				
+				<img src="img/how-to-set-up-theme-3.png">
+				
+				<p>&nbsp;</p>
+			</section>
+			
+			<section id="twitter">
+				<h3>How to set up a Twitter Widget? - <a href="#toc">Top</a></h3>
+				<p>&nbsp;</p>
+				<p><strong><em>STEP #1. Setup a Twitter Application</em></strong></p>
+				
+				<p>1. Visit https://dev.twitter.com/apps/ and sign in using your Twitter username and password.</p>
+				<p>2. Select "Create new application" and enter the application details.</p>
+				<p>3. On the next details screen, click "create my access token".</p>
+				<p>4. Make a note of the Consumer key, Consumer secret, Access token and Access token secret as highlighted below.</p>
+				<img src="img/twitter-1.png">
+				
+				<p>&nbsp;</p>
+				
+				<p><strong><em>STEP #2. Authenticate the Twitter Feed.</em></strong></p>
+
+				<p>1. Download the attachment and upload it into folder with theme.</p>
+				<p>2. Fill out all fields in the "twitter/index.php" as highlighted below.</p>
+				<img src="img/twitter-2.png">
+				
+				<p>&nbsp;</p>
+				
+				<p><strong><em>STEP #3. Enjoy :)</em></strong></p>
+				<p>&nbsp;</p>
+			</section>
+
+			<section id="how-to-set-up-feedback">
+				<h3>How to set up a subscription form? - <a href="#toc">Top</a></h3>
+				<p>1. Open the "conf.php".</p>
+				<p>2. You will see this:</p>
+				<img src="img/how-to-set-up-feedback.png">
+				<p>3. Change email and values to the desired.</p>
+				<p>4. Done.</p>
+				<p>&nbsp;</p>
+			</section>
+			
+			<section id="structure">
+				<h3>HTML Structure - <a href="#toc">Top</a></h3>
+				<p>What do you need to change in the "index.html" before start?</p>
+				
+				<p>1. Header</p>
+				<p>You need to change the "href" of tag "a" on address of current page and upload your logo to the "/img/".</p>
+				<img src="img/html-header.png">
+				
+				<p>&nbsp;</p>
+				
+				<p>2. About</p>
+				<p>Write your short description to the "div" with class "text"</p>
+				<img src="img/html-about.png">
+				
+				<p>&nbsp;</p>
+				
+				<p>3. Our team</p>
+				<p>Upload photos of your team to the "/img/about" with names 1.jpg, 2.jpg or 3.jpg</p>
+				<p>To disable photo you can set class "nopic" (such on screenshot - third block with class "item")</p>
+				<img src="img/html-team.png">
+				
+				<p>&nbsp;</p>
+				
+				<p>3. Social</p>
+				<p>Change "#" on your social-links</p>
+				<p>If you would like to change the social icon, you should replace value of "class" on the name of icon from the folder "/ img / icons".
+					
+<pre>
+	For example: &lt;li class="twitter">&lt;/li>  -->  &lt;li class="tumblr">&lt;/li>
+</pre>
+				</p>
+				<img src="img/html-social.png">
+
+			<p>&nbsp;</p>
+			</section>
+			
+			<section id="css">
+				<h3>CSS Files - <a href="#toc">Top</a></h3>
+				<img src="img/css-tree.png">
+				
+				<p>"Devices.css" is responsible for the correct display of theme on different devices (iPhone, iPad etc.).</p>
+				<p>"Icons.css" is responsible for display social icons.</p>
+				<p>"Main.css" is responsible for main css structure.</p>
+				<p>"Reset.css" is responsible for reset styles in different browsers.</p>
+				<p>"Style.css" launches previous styles.</p>
+				<p>"ie-fix" contains styles for Internet Explorer.</p>
+				<p>&nbsp;</p>
+			</section>
+			
+			<section id="js">
+				<h3>Javascript files - <a href="#toc">Top</a></h3>
+				<img src="img/js-tree.png">
+				
+				<p>"config.js" contains settings of theme.</p>
+				<p>"countdown.js" controls the countdown (You don't need to change this file).</p>
+				<p>"func.js" contains several functions.</p>
+				<p>"main.js" contains the main functions of theme.</p>
+				<p>"parallax.js" controls the parallax.</p>
+				<p>"sys" contains files which you do not need to edit.</p>
+				<p>&nbsp;</p>
+			</section>
+					
+			<section id="credits">
+				<h3>Sources and Credits - <a href="#toc">Top</a></h3>
+				<p>I've used the following files.
+
+				<ul>
+					<li><strong>"Arrow.svg"</strong><br>
+						Designed by P.J. Onori from The Noun Project
+					</li>
+					
+					<li><strong>"Picons"</strong><br>
+						Created by: Picons.me<br>
+						Website: http://picons.me
+					</li>
+
+				</ul>
+				<p>&nbsp;</p>
+				<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Roman Novokhatskiy</strong></p>
+		<p>&nbsp;</p>
+			</section>
+		</div>
+	</body>
+</html>
