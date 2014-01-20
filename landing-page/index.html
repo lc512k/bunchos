@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<title>Skyline</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/devices.css">
+		<script src="js/sys/css3-mediaqueries.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/sys/ie8.canvas-support.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
+		<script src="js/sys/plugins.js"></script>
+		<script src="js/sys/os.js"></script>
+		
+		<script src="js/config.js"></script>
+		<script src="js/func.js"></script>
+		
+		<script src="js/parallax.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/main.js"></script>		
+	</head>
+	
+	<body>
+		
+		<!-- PRE-LOADER -->
+		<div id="preloader">
+			<div class="back">
+				<div class="white"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			
+			<div class="line"></div>
+		</div>
+		<!-- // PRE-LOADER -->
+			
+		<!-- HEADER -->
+<!-- 		<header>
+			<div class="logo">
+				<a href="/"><img src="img/logo.png"></a>
+			</div>
+		</header> -->
+
+		<div id="head-space"></div>
+		<!-- // HEADER -->
+
+		<!-- SLIDER -->
+		<section id="slider" class="inview">
+			<div class="pattern"></div>
+			<div class="text">
+				<h1>BUNCHOS.ORG</h1>
+				<h3>DALE UNA SEGUNDA VIDA A LOS UNIFORMES DE TUS HIJOS</h3>
+			</div>
+			
+			<!-- PHOTOS -->
+			<div class="photos">
+				<div></div>
+			</div>
+			<!-- // PHOTOS -->
+			
+			<div id="just-scroll" class="white">
+				<div>Just scroll</div>
+			</div>
+		</section>		
+		<!-- // SLIDER -->
+		
+		<!-- COUNTDOWN -->
+		<div id="countdown">
+			<div class="body">
+				<div id="days">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">days</div>
+					</div>
+				</div>
+				
+				<div id="hrs">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">hours</div>
+					</div>
+				</div>
+				
+				<div id="min">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">minutes</div>
+					</div>
+				</div>
+				
+				<div id="sec">
+					<canvas></canvas>
+					<div class="info">
+						<div class="num">--</div>
+						<div class="label">seconds</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // COUNTDOWN -->
+		
+		<!-- ABOUT -->
+		<section id="about" class="page">
+			<header>
+				<fieldset>
+					<legend align="center">¿Qué es Bunchos.org?</legend>
+				</fieldset>
+			</header>
+			<div class="body">
+				<div class="text">
+					<p><b>Bunchos.org</b> es una iniciativa sin ánimos de lucro para facilitar el intercambio de uniformes escolares. Nuestro objetivo es ser el puente entre padres que deseen donar uniformes en buen estado que hayan quedado pequeños a sus hijos y aquellos en busca de piezas sueltas en tallas específicas o incluso uniformes completos.</p>
+<br>
+					<p>Porque los uniformes tienen aún mucha vida despues de quedarse pequeños ¡Dales una segunda oportunidad!</p>
+
+					<br>
+					<p><b>Comenzamos en Junio de 2013 ¡Apúntate y te avisaremos!</b></p>
+				</div>
+				
+				<!-- OUR TEAM -->
+<!-- 				<div class="photos">
+					<div class="item first nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+					<div class="item second nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+					<div class="item third nopic">
+						<span></span>
+						<div>Unnamed<br/>Smb of smth</div>
+					</div>
+				</div> -->
+				<!-- // OUR TEAM -->
+			</div>
+		</section>
+		<!-- // ABOUT -->
+		
+		<!-- CONTACTS -->
+		<section id="contacts" class="page">
+<!-- 			<header>
+				<fieldset>
+					<legend align="center">Apúntate!</legend>
+				</fieldset>
+			</header> -->
+			
+			<div class="body">
+			
+				<!-- SUBSCRIBE FORM -->
+				<div class="newsletter">
+					<!-- <h3>¡Te avisamos cuando puedas participar!</h3>
+					 -->
+					<form id="subscribe" action="subscribe.php" method="post">
+						
+						<input type="email" name="email" value="" placeholder="tu@correo.com" required>
+						<button id="send">Te avisamos</button>
+						
+						<div class="response">¡Gracias!</div>
+						<div class="error">¡Email invalido!</div>
+						
+					</form>
+				</div> 
+				<!-- // SUBSCRIBE FORM -->
+				
+				<!-- SOCIAL BLOCK -->
+ 				<div class="social">
+					<h3>Proximamente en...</h3>
+					
+					<ul class="icons">
+						<li class="twitter"><a href="#"></a></li>
+						<li class="facebook"><a href="#"></a></li>
+						<li class="tumblr"><a href="#"></a></li>
+						<li class="pinterest"><a href="#"></a></li>
+						<li class="gplus"><a href="#"></a></li>
+					</ul>
+					
+					<ul class="twitter"></ul>
+				</div>
+				<!-- // SOCIAL BLOCK -->
+				
+				<div><button class="write-us-open">¿Sugerencias?</button></div>
+				
+				<!-- FEEDBACK -->
+				<div class="write-us">
+					<h3>Dejanos tus comentarios</h3>
+					
+					<div class="text"></div>
+					
+					<form id="feedback" action="feedback.php" method="post">
+						
+						<div><input type="text" name="uname" value="" placeholder="Tu nombre" required></div>
+						<div><input type="email" name="email" value="" placeholder="Tu email" required></div>
+						<div><textarea name="mess" placeholder="Message" required></textarea></div>
+						
+						<div class="ctr">
+							<span class="response">Gracias por tus sugerencias!</span>
+							<span class="error">Ha ocurrido un error :(</span>
+							<button id="write-us">Send</button>
+						</div>
+						
+					</form>
+				</div>
+				<!-- // FEEDBACK -->
+
+				
+			</div>
+		</section>
+		<!-- // CONTACTS -->
+
+		<!-- FOOTER -->		
+		<footer>
+			Copyright © Bunchos.org
+		</footer>
+		<!-- // FOOTER -->	
+		
+		<div id="ct" style="display:none"></div>
+	</body>
+</html>
