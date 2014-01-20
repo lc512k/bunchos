@@ -64,6 +64,7 @@
                         <a href="#" class="button button-item secondary radius">.</a> 
                         <a href="#" class="button button-item secondary radius">.</a> 
                         <a href="#" class="button button-item secondary radius">.</a>
+                        |
                         <a href="#" class="button button-item success radius" data-reveal-id="myModal">.</a>
                     </li>
                     <li>
@@ -71,7 +72,8 @@
                         <a href="#" class="button button-item secondary radius">.</a> 
                         <a href="#" class="button button-item secondary radius">.</a>
                         <a href="#" class="button button-item secondary radius">.</a>
-                        <a href="#" class="button button-item alert radius">.</a>
+                        |
+                        <a href="#" class="button button-item alert radius" data-reveal-id="deleteModal">x</a>
                     </li>
                     <li>
                         <a href="#" class="button button-item secondary radius">.</a> 
@@ -123,6 +125,9 @@
             </h2>
             <div>
                 <a href="#" class="button button-item secondary radius">.</a> 
+            </div>
+            <div>
+                <a href="#" class="button button-item secondary radius">.</a> 
                 <a href="#" class="button button-item secondary radius">.</a> 
                 <a href="#" class="button button-item secondary radius">.</a> 
                 <a href="#" class="button button-item secondary radius">.</a> 
@@ -165,7 +170,17 @@
             <button class="secondary tiny">Cancel</button>
             <button class="button tiny">OK</button>
         </div>
+        <a class="close-reveal-modal">&#215;</a> 
+    </div>
 
+    <div id="deleteModal" class="reveal-modal medium" data-reveal>
+        <h2>Delete this lorem?</h2>
+        <p class="lead">Your couch. It is mine.</p>
+        <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+        <div class="right">
+            <button class="secondary tiny">Cancel</button>
+            <button class="button alert tiny">Delete</button>
+        </div>
         <a class="close-reveal-modal">&#215;</a> 
     </div>
 
