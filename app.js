@@ -13,9 +13,7 @@ requirejs.config({
     text: 'text',
     tv4: 'tv4',
     modernizr: 'modernizr',
-    tooltip: 'foundation/foundation.tooltip',
-    dropdown: 'foundation/foundation.dropdown',
-    accordion: 'foundation/foundation.accordion'
+    reveal: 'foundation/foundation.reveal'
   },
   shim: {
     'tv4': {
@@ -28,17 +26,9 @@ requirejs.config({
     'modernizr': {
       deps: ['jquery']
     },
-    'tooltip': {
+    'reveal': {
       deps: ['jquery', 'foundation'],
-      exports: 'tooltip'
-    },
-    'dropdown': {
-      deps: ['jquery', 'foundation'],
-      exports: 'dropdown'
-    },
-    'accordion': {
-      deps: ['jquery', 'foundation'],
-      exports: 'accordion'
+      exports: 'reveal'
     }
   }
 });
