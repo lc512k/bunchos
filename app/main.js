@@ -65,6 +65,10 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
 
           $(Mustache.render(uniformTemplate)).appendTo($requests).fadeIn(300);
         }
+
+        if (typeof(Storage) !== "undefined") {
+          localStorage.uniform = "hello"
+        }
       })
 
       // $anyUniformItem.on('mouseover', function(e) {
