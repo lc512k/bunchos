@@ -33,42 +33,30 @@
     <div class="small-12 medium-12 large-12 columns">
       <div class="small-12 medium-6 large-6 columns panel">
         <h1>Lorem:</h1>
-        <ul class="items" data-bunchos="donating">
-          <li>
+        <ul class="items" id="donation-list" data-bunchos-list>
+          <!--           <li>
             <a href="#" class="button button-item secondary radius">.</a> 
             <a href="#" class="button button-item secondary radius">.</a> 
             <a href="#" class="button button-item secondary radius">.</a> 
             <a href="#" class="button button-item secondary radius">.</a>
             <a href="#" class="button button-item success radius" data-reveal-id="myModal">.</a>
-          </li>
-          <li>
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item alert radius" style="display: none;" data-reveal-id="deleteModal" data-bunchos-button="delete">x</a>
-          </li>
+          </li> -->
+
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="add-donation">+</a> 
           </li>
         </ul>
       </div>
       <div class="small-12 medium-6 large-6 columns panel">
         <h1>Ipsum:</h1>
-        <ul class="items" data-bunchos="requesting">
-          <li>
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item alert radius" style="display: none;" data-reveal-id="deleteModal" data-bunchos-button="delete">x</a>
-          </li>
+        <ul class="items" id="request-list" data-bunchos-list>
+
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="add-request">+</a> 
           </li>
         </ul>
       </div>
@@ -77,7 +65,7 @@
 
 
   <!-- CREATE FORM -->
-  <div class="row" style="display: none;" data-bunchos-form id="form">
+  <div class="row" style="display: none;" id="form">
     <div class="small-12 columns panel text-center">
       <h2>New Lorem</h2>
       <div>
@@ -120,8 +108,8 @@
         <a href="#" class="button button-item secondary radius">.</a> 
       </div>
       <div class="text-right">
-        <a href="#" class="button secondary radius" data-bunchos-button="cancel">Cancel</a> 
-        <a href="#" class="button radius" data-bunchos-button="save">Save</a> 
+        <a href="#" class="button secondary radius" id="cancel-form">Cancel</a> 
+        <a href="#" class="button radius" id="save-form">Save</a> 
       </div>
     </div>
   </div>
