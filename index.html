@@ -48,17 +48,10 @@
             <a href="#" class="button button-item secondary radius">.</a>
             <a href="#" class="button button-item alert radius" style="display: none;" data-reveal-id="deleteModal" data-bunchos-button="delete">x</a>
           </li>
-          <li>
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item alert radius" style="display: none;" data-reveal-id="deleteModal" data-bunchos-button="delete">x</a>
-          </li>
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add">+</a> 
           </li>
         </ul>
       </div>
@@ -84,7 +77,7 @@
 
 
   <!-- CREATE FORM -->
-  <div class="row" style="display: none;" data-bunchos-form>
+  <div class="row" style="display: none;" data-bunchos-form id="form">
     <div class="small-12 columns panel text-center">
       <h2>New Lorem</h2>
       <div>
@@ -127,8 +120,8 @@
         <a href="#" class="button button-item secondary radius">.</a> 
       </div>
       <div class="text-right">
-        <a href="#" class="button secondary radius">Cancel</a> 
-        <a href="#" class="button radius">Save</a> 
+        <a href="#" class="button secondary radius" data-bunchos-button="cancel">Cancel</a> 
+        <a href="#" class="button radius" data-bunchos-button="save">Save</a> 
       </div>
     </div>
   </div>
