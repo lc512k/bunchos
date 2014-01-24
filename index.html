@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
@@ -33,30 +33,21 @@
     <div class="small-12 medium-12 large-12 columns">
       <div class="small-12 medium-6 large-6 columns">
         <h1>Quiero donar:</h1>
-        <ul class="items" id="donation-list" data-bunchos-list>
-          <!--           <li>
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a> 
-            <a href="#" class="button button-item secondary radius">.</a>
-            <a href="#" class="button button-item success radius" data-reveal-id="myModal">.</a>
-          </li> -->
-
+        <ul class="items" id="bunchos-donation-list" data-bunchos-list>
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="add-donation">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-donation">+</a> 
           </li>
         </ul>
       </div>
       <div class="small-12 medium-6 large-6 columns">
         <h1>Necesito:</h1>
-        <ul class="items" id="request-list" data-bunchos-list>
-
+        <ul class="items" id="bunchos-request-list" data-bunchos-list>
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="add-request">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-request">+</a> 
           </li>
         </ul>
       </div>
@@ -65,17 +56,24 @@
 
 
   <!-- CREATE FORM -->
-  <div class="row" style="display: none;" id="form">
+  <div class="row" style="display: none;" id="bunchos-form">
     <div class="small-12 columns panel text-center">
-      <h2>New Lorem</h2>
-      <div>
-        <a href="#" class="button button-item radius">.</a> 
-        <a href="#" class="button button-item radius">.</a> 
+      <h2 id="bunchos-form-title"></h2>
+      <div id="bunchos-form-output">
+        <!--<a href="#" class="button button-item radius">.</a> 
+        <a href="#" class="button button-item radius">.</a>  -->
       </div>
       <h2>
         <small>Choose an ipsum</small>
       </h2>
-      <div>
+      <div id="bunchos-form-input">
+        <div id="bunchos-form-node">
+          <a data-bunchos-node="tops" class="button button-item secondary radius">.</a> 
+          <a data-bunchos-node="bottoms" class="button button-item secondary radius">.</a> 
+        </div>
+      </div>
+
+      <!--       <div>
         <a href="#" class="button button-item secondary radius">.</a> 
       </div>
       <div>
@@ -106,15 +104,15 @@
       <div>
         <a href="#" class="button button-item secondary radius">.</a> 
         <a href="#" class="button button-item secondary radius">.</a> 
-      </div>
+      </div> -->
       <div class="text-right">
-        <a href="#" class="button secondary radius" id="cancel-form">Cancel</a> 
-        <a href="#" class="button radius" id="save-form">Save</a> 
+        <a href="#" class="button secondary radius" id="bunchos-cancel-form">Cancel</a> 
+        <a href="#" class="button radius" id="bunchos-save-form">Save</a> 
       </div>
     </div>
   </div>
 
-  <div id="myModal" class="reveal-modal medium" data-reveal>
+  <div id="bunchos-myModal" class="reveal-modal medium" data-reveal>
     <h2>Awesome. I have it.</h2>
     <p class="lead">Your couch. It is mine.</p>
     <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
@@ -125,7 +123,7 @@
     <a class="close-reveal-modal">&#215;</a> 
   </div>
 
-  <div id="deleteModal" class="reveal-modal medium" data-reveal>
+  <div id="bunchos-deleteModal" class="reveal-modal medium" data-reveal>
     <h2>Delete this lorem?</h2>
     <p class="lead">Your couch. It is mine.</p>
     <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>

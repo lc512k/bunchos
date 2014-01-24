@@ -16,10 +16,6 @@ requirejs.config({
     reveal: 'foundation/foundation.reveal'
   },
   shim: {
-    'tv4': {
-      deps: ['jquery'],
-      exports: 'tv4'
-    },
     'foundation': {
       deps: ['jquery', 'modernizr']
     },

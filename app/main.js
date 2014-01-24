@@ -1,35 +1,28 @@
 /* global define, console */
-define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templates/uniform2.html'],
+define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templates/uniform2.html' /*, 'text!templates/form-row.html'*/ ],
   function($, Mustache, Foundation, modernizer, reveal, uniformTemplate) {
-    // 'use strict';
-    // console.info('$', $);
-    // console.info('Mustache', Mustache);
-    // console.info('Foundation', Foundation);
-    // console.info('modernizer', modernizer);
-    // console.info('reveal', reveal);
-    var init, bindEvents;
+
+    var init, bindEvents, bindFrmEvents;
 
     bindEvents = function() {
       var $anyUniform, $anyAddBtn, $donationsAndrequests;
       $donationsAndrequests = $('[data-bunchos]');
       $anyUniform = $donationsAndrequests.find('li');
-      $donations = $('#donation-list');
-      $requests = $('#request-list');
+      $donations = $('#bunchos-donation-list');
+      $requests = $('#bunchos-request-list');
       $anyUniformItem = $('[data-bunchos-list]').find('a');
       $anyAddBtn = $('[data-bunchos-button="add"]');
-      $form = $('#form');
-      $cancelFormBtn = $form.find('#cancel-form');
-      $saveFormBtn = $form.find('#save-form');
+      $form = $('#bunchos-form');
+      $cancelFormBtn = $form.find('#bunchos-cancel-form');
+      $saveFormBtn = $form.find('#bunchos-save-form');
 
       console.log('anyAddBtn', $anyAddBtn);
 
       $('body').on('mouseover', 'li', function(e) {
-        console.log('li fade in', this)
         $(this).find('[data-bunchos-button="delete"]').show();
       });
 
       $('body').on('mouseout', 'li', function(e) {
-        console.info('li fade out', this)
         $(this).find('[data-bunchos-button="delete"]').hide();
       });
 
@@ -37,15 +30,15 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
         //$form.slideDown();
         $form.show();
         var currentTargetId = e.currentTarget.id;
-        console.log(e.currentTarget.id);
-        //$(window).scrollTop($('#form').scrollTop());
+        //$(window).scrollTop($('#bunchos-form').scrollTop());
 
         $('html').animate({
-          scrollTop: $('#form').offset().top
+          scrollTop: $('#bunchos-form').offset().top
         }, 600);
 
-        $form.data('bunchos-trigger', currentTargetId)
+        $form.data('bunchos-trigger', currentTargetId);
 
+        bindFormEvents();
       });
 
 
@@ -58,26 +51,37 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
         var trigger = $form.data('bunchosTrigger');
         //console.log("$donations", uniformTemplate, Mustache.render(uniformTemplate))
         //$donations.append(Mustache.render(uniformTemplate));
-
         if (trigger === "add-donation") {
           $(Mustache.render(uniformTemplate)).appendTo($donations).fadeIn(300);
         } else if (trigger === "add-request") {
 
           $(Mustache.render(uniformTemplate)).appendTo($requests).fadeIn(300);
         }
-
         if (typeof(Storage) !== "undefined") {
           localStorage.uniform = "hello"
         }
       })
+    };
 
-      // $anyUniformItem.on('mouseover', function(e) {
-      //   return false;
-      // });
-      // $anyUniformItem.on('mouseout', function(e) {
-      //   return false;
-      // });
+    bindFormEvents = function() {
+      console.log('trigger?', $form.data('bunchos-trigger'));
+      var $formTitle = $('#bunchos-form-title');
 
+      if ($form.data('bunchos-trigger').indexOf('donation')) {
+        $formTitle.html('New Donation');
+      } else {
+        $formTitle.html('New Request');
+      }
+
+      $formInput = $('#bunchos-form-input');
+      $formOutput = $('#bunchos-form-output');
+      $anyFormNode = $('[data-bunchos-node]');
+      $anyFormElement = $('[data-bunchos-element]');
+
+      $anyFormElement.on('click', function() {
+        console.log('this', this);
+        $formOutput.append($.clone(this));
+      });
     };
 
     init = function() {
