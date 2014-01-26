@@ -37,7 +37,7 @@
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-donation">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-donation">+</a>
           </li>
         </ul>
       </div>
@@ -47,7 +47,7 @@
         </ul>
         <ul class="items">
           <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-request">+</a> 
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-request">+</a>
           </li>
         </ul>
       </div>
@@ -59,43 +59,33 @@
   <div class="row" style="display: none;" id="bunchos-form">
     <div class="small-12 columns panel text-center">
       <h2 id="bunchos-form-title"></h2>
-      <div id="bunchos-form-output" class="panel callout" style="height: 110px;">
-
+      <div class="panel callout" style="height: 110px;">
+        <ul>
+          <li id="bunchos-form-output">
+          </li>
+        </ul>
       </div>
       <h4>Choose an ipsum</h4>
 
-      <div style="display: none;" id="bunchos-element-5">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">note</a> 
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-5">
+        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
       </div>
-      <div style="display: none;" id="bunchos-element-4">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">tag</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">new</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">used</a> 
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-4">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">tag</a><a data-bunchos-element href="#" class="button button-item secondary radius">new</a><a data-bunchos-element href="#" class="button button-item secondary radius">used</a>
       </div>
-      <div style="display: none;" id="bunchos-element-3">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">2</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">4</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">6</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">8</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">10</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">12</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">14</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">16</a> 
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-3">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">2</a><a data-bunchos-element href="#" class="button button-item secondary radius">4</a><a data-bunchos-element href="#" class="button button-item secondary radius">6</a><a data-bunchos-element href="#" class="button button-item secondary radius">8</a><a data-bunchos-element href="#" class="button button-item secondary radius">10</a><a data-bunchos-element href="#" class="button button-item secondary radius">12</a><a data-bunchos-element href="#" class="button button-item secondary radius">14</a><a data-bunchos-element href="#" class="button button-item secondary radius">16</a>
       </div>
-      <div style="display: none;" id="bunchos-element-2">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">short</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">long</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">short polo</a> 
-        <a data-bunchos-element href="#" class="button button-item secondary radius">long polo</a> 
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-2">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">short</a><a data-bunchos-element href="#" class="button button-item secondary radius">long</a><a data-bunchos-element href="#" class="button button-item secondary radius">short polo</a><a data-bunchos-element href="#" class="button button-item secondary radius">long polo</a> 
       </div>
-      <div id="bunchos-node-1">
-        <a data-bunchos-node="tops" class="button button-item secondary radius">top</a> 
-        <a data-bunchos-node="bottoms" class="button button-item secondary radius">bottom</a> 
+      <div data-bunchos-node-row id="bunchos-node-1">
+        <a data-bunchos-node="tops" class="button button-item secondary radius">top</a><a data-bunchos-node="bottoms" class="button button-item secondary radius">bottom</a>
       </div>
-      <div class="text-right">
-        <a href="#" class="button secondary radius" id="bunchos-cancel-form">Cancel</a> 
-        <a href="#" class="button radius" id="bunchos-save-form">Save</a> 
-      </div>
+      <!--       <div class="text-right">
+        <a href="#" class="button secondary radius" id="bunchos-cancel-form">Cancel</a>
+        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
+      </div> -->
     </div>
   </div>
 
@@ -107,7 +97,7 @@
       <button class="secondary tiny">Cancel</button>
       <button class="button tiny">OK</button>
     </div>
-    <a class="close-reveal-modal">&#215;</a> 
+    <a class="close-reveal-modal">&#215;</a>
   </div>
 
   <div id="bunchos-deleteModal" class="reveal-modal medium" data-reveal>
@@ -118,7 +108,7 @@
       <button class="secondary tiny">Cancel</button>
       <button class="button alert tiny">Delete</button>
     </div>
-    <a class="close-reveal-modal">&#215;</a> 
+    <a class="close-reveal-modal">&#215;</a>
   </div>
 
   <hr>
@@ -127,7 +117,7 @@
       <small class="left">© 2012-2013 <a href="http://www.laura-carvajal.com" target="_blank">Laura Carvajal</a>.
       </small>
       <small class="right">
-        <strong>ValidJson.com</strong>is built with JS, jQuery, <a target="_blank" href="http://foundation.zurb.com/">Foundation 5</a>, <a target="_blank" href="http://mustache.github.com/">Mustache</a>, <a target="_blank" href="http://requirejs.org/">RequireJS</a>, <a href="http://qunitjs.com/">QUnit</a> and <a href="http://www.loremipsumjs.com/">LoremIpsumJS</a>.
+        <strong>ValidJson.com</strong>is built with JS, jQuery, <a target="_blank" href="http://foundation.zurb.com/">Foundation 5</a>, <a target="_blank" href="http://mustache.github.com/">Mustache</a>, <a target="_blank" href="http://requirejs.org/">RequireJS</a>, <a href="http://qunitjs.com/">QUnit</a>and <a href="http://www.loremipsumjs.com/">LoremIpsumJS</a>.
       </small>
     </div>
   </div>

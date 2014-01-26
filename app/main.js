@@ -4,6 +4,9 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
 
     var init, bindEvents, bindFrmEvents;
 
+
+
+
     bindEvents = function() {
       var $anyUniform, $anyAddBtn, $donationsAndrequests;
       $donationsAndrequests = $('[data-bunchos]');
@@ -16,6 +19,13 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
       $cancelFormBtn = $form.find('#bunchos-cancel-form');
       $saveFormBtn = $form.find('#bunchos-save-form');
 
+
+      $('body').on('click', '[data-bunchos-button="delete"]', function(e) {
+        $(this).parent().fadeOut(300, function() {
+          $(this).parent().remove();
+        });
+
+      });
       $('body').on('mouseover', 'li', function(e) {
         $(this).find('[data-bunchos-button="delete"]').show();
       });
@@ -49,8 +59,11 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
       $formOutput = $('#bunchos-form-output');
       $anyFormNode = $('[data-bunchos-node]');
       $anyFormElement = $('[data-bunchos-element]');
+      $formElementRows = $('[data-bunchos-element-row]');
+      $formNodeRows = $('[data-bunchos-node-row]');
 
       $anyFormElement.on('click', function(e) {
+        e.preventDefault();
         var currentDiv = $(this).parent().attr('id');
         var nextDivId = +currentDiv.substring(currentDiv.length - 1, currentDiv.length) + 1;
         var clone = $($.clone(this));
@@ -60,23 +73,32 @@ define(['jquery', 'mustache', 'foundation', 'modernizr', 'reveal', 'text!templat
         //$(this).parent().hide();
       });
 
-      $anyFormNode.on('click', function() {
+      $anyFormNode.on('click', function(e) {
+        e.preventDefault();
         var currentDiv = $(this).parent().attr('id');
         var nextDivId = +currentDiv.substring(currentDiv.length - 1, currentDiv.length) + 1;
         $('#bunchos-element-' + nextDivId).slideDown();
         $('#' + currentDiv).fadeTo('fast', 0.3);
       });
 
-      $cancelFormBtn.on('click', function() {
-        $anyFormElement.hide();
-        $form.hide();
-        $formOutput.html('');
-      });
+      // $cancelFormBtn.on('click', function() {
+      //   //$anyFormElement.parent().hide();
+      //   //make opacity 1 again in every line
+      //   $formNodeRows.css('opacity', 1);
+      //   $formElementRows.css('opacity', 1);
+      //   $formElementRows.hide();
+      //   $form.hide();
+      //   $formOutput.html('');
+      // });
 
       $saveFormBtn.on('click', function() {
-        $anyFormElement.hide();
+        //$anyFormElement.parent().hide();
+        //make opacity 1 again in every line
+        $formNodeRows.css('opacity', 1);
+        $formElementRows.css('opacity', 1);
+        $formElementRows.hide();
         $form.hide();
-        var clone = $($('#bunchos-form-output').html());
+        var clone = $('<li>' + $('#bunchos-form-output').html() + '<a data-bunchos-button="delete" style="display: none;" class="button button-item alert radius">x</a>' + '</li>');
         clone.hide().appendTo($requests).fadeIn(300);
         $formOutput.html('');
       })

@@ -7,7 +7,7 @@ requirejs.config({
     templates: '../templates',
     data: '../data',
     extras: '../extras',
-    jquery: 'jquery',
+    jquery: 'jquery-2.1.0',
     mustache: 'mustache',
     foundation: 'foundation/foundation',
     text: 'text',
