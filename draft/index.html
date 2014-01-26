@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunchos | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link rel="stylesheet" href="css/foundation-icons.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script data-main="app.js" src="lib/require.js"></script>
+</head>
+</head>
+
+<body>
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Bunchos.org</a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="active"><a href="#">Logout</a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <div class="small-12 medium-6 large-6 columns">
+        <h1>Quiero donar:</h1>
+        <ul class="items" id="bunchos-donation-list" data-bunchos-list>
+        </ul>
+        <ul class="items">
+          <li>
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-donation">+</a>
+          </li>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-6 columns">
+        <h1>Necesito:</h1>
+        <ul class="items" id="bunchos-request-list" data-bunchos-list>
+        </ul>
+        <ul class="items">
+          <li>
+            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-request">+</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CREATE FORM -->
+  <div class="row" style="display: none;" id="bunchos-form">
+    <div class="small-12 columns panel text-center">
+      <h2 id="bunchos-form-title"></h2>
+      <div class="panel callout" style="height: 110px;">
+        <ul>
+          <li id="bunchos-form-output">
+          </li>
+        </ul>
+      </div>
+      <h4>Choose an ipsum</h4>
+
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-5">
+        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
+      </div>
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-4">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">tag</a><a data-bunchos-element href="#" class="button button-item secondary radius">new</a><a data-bunchos-element href="#" class="button button-item secondary radius">used</a>
+      </div>
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-3">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">2</a><a data-bunchos-element href="#" class="button button-item secondary radius">4</a><a data-bunchos-element href="#" class="button button-item secondary radius">6</a><a data-bunchos-element href="#" class="button button-item secondary radius">8</a><a data-bunchos-element href="#" class="button button-item secondary radius">10</a><a data-bunchos-element href="#" class="button button-item secondary radius">12</a><a data-bunchos-element href="#" class="button button-item secondary radius">14</a><a data-bunchos-element href="#" class="button button-item secondary radius">16</a>
+      </div>
+      <div style="display: none;" data-bunchos-element-row id="bunchos-element-2">
+        <a data-bunchos-element href="#" class="button button-item secondary radius">short</a><a data-bunchos-element href="#" class="button button-item secondary radius">long</a><a data-bunchos-element href="#" class="button button-item secondary radius">short polo</a><a data-bunchos-element href="#" class="button button-item secondary radius">long polo</a> 
+      </div>
+      <div data-bunchos-node-row id="bunchos-node-1">
+        <a data-bunchos-node="tops" class="button button-item secondary radius">top</a><a data-bunchos-node="bottoms" class="button button-item secondary radius">bottom</a>
+      </div>
+      <!--       <div class="text-right">
+        <a href="#" class="button secondary radius" id="bunchos-cancel-form">Cancel</a>
+        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="bunchos-myModal" class="reveal-modal medium" data-reveal>
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+    <div class="right">
+      <button class="secondary tiny">Cancel</button>
+      <button class="button tiny">OK</button>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="bunchos-deleteModal" class="reveal-modal medium" data-reveal>
+    <h2>Delete this lorem?</h2>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+    <div class="right">
+      <button class="secondary tiny">Cancel</button>
+      <button class="button alert tiny">Delete</button>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <small class="left">© 2012-2013 <a href="http://www.laura-carvajal.com" target="_blank">Laura Carvajal</a>.
+      </small>
+      <small class="right">
+        <strong>ValidJson.com</strong>is built with JS, jQuery, <a target="_blank" href="http://foundation.zurb.com/">Foundation 5</a>, <a target="_blank" href="http://mustache.github.com/">Mustache</a>, <a target="_blank" href="http://requirejs.org/">RequireJS</a>, <a href="http://qunitjs.com/">QUnit</a>and <a href="http://www.loremipsumjs.com/">LoremIpsumJS</a>.
+      </small>
+    </div>
+  </div>
+</body>
+
+</html>

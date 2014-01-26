@@ -16,78 +16,98 @@
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <h1><a href="#">Bunchos.org</a>
+        <h1><a href="#">Bunchos</a>
         </h1>
       </li>
       <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
       </li>
     </ul>
     <section class="top-bar-section">
+      <!-- Right Nav Section -->
       <ul class="right">
-        <li class="active"><a href="#">Logout</a>
+        <li class="has-dropdown"> <a href="#">Laura Carvajal</a> 
+          <ul class="dropdown">
+            <li><a href="#">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="active"><a href="#">Donaciones</a>
+        </li>
+        <li><a href="#">Peticiones</a>
         </li>
       </ul>
     </section>
   </nav>
+
+
+
   <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <div class="small-12 medium-6 large-6 columns">
-        <h1>Quiero donar:</h1>
-        <ul class="items" id="bunchos-donation-list" data-bunchos-list>
-        </ul>
-        <ul class="items">
-          <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-donation">+</a>
-          </li>
-        </ul>
+    <div class="medium-8 small-12 columns">
+      <h2>Nueva Donación</h2>
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="pieza" class="right inline">Pieza</label>
+        </div>
+        <div class="small-10 columns" id="pieza">
+          <a class="button secondary radius">x</a>  <a class="button secondary radius">x</a>  <a class="button secondary radius">x</a>
+        </div>
       </div>
-      <div class="small-12 medium-6 large-6 columns">
-        <h1>Necesito:</h1>
-        <ul class="items" id="bunchos-request-list" data-bunchos-list>
-        </ul>
-        <ul class="items">
-          <li>
-            <a href="#" class="button button-item radius" data-bunchos-button="add" id="bunchos-add-request">+</a>
-          </li>
-        </ul>
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="size" class="right inline">Size</label>
+        </div>
+        <div class="small-10 columns">
+          <div id="size">
+            <a class="button secondary radius">&lt;</a>
+            <a class="button secondary radius">4</a>
+            <a class="button secondary radius">&gt;</a>
+          </div>
+        </div>
       </div>
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="cantidad" class="right inline">Cantidad</label>
+        </div>
+        <div class="small-10 columns" id="cantidad">
+          <div id="size">
+            <a class="button secondary radius">&lt;</a>
+            <a class="button secondary radius">1</a>
+            <a class="button secondary radius">&gt;</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="info" class="right inline">Extras</label>
+        </div>
+        <div class="small-8 columns">
+          <textarea id="info" placeholder="comentarios..."></textarea>
+        </div>
+        <div class="small-2 columns">
+          <a class="button secondary radius"><i class="fi-camera"></i></a></a>
+        </div>
+      </div>
+    </div>
+    <div class="medium-4 small-11 columns panel">
+      <h3>Donaciones activas</h3>
+      <ul class="items">
+        <li>1x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+        <li>3x <a class="button secondary radius"><i class="fi-star"></i></a> talla 2</li>
+        <li>1x <a class="button secondary radius"><i class="fi-star"></i></a> talla 2</li>
+        <li>5x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+        <li>5x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+      </ul>
     </div>
   </div>
 
 
-  <!-- CREATE FORM -->
-  <div class="row" style="display: none;" id="bunchos-form">
-    <div class="small-12 columns panel text-center">
-      <h2 id="bunchos-form-title"></h2>
-      <div class="panel callout" style="height: 110px;">
-        <ul>
-          <li id="bunchos-form-output">
-          </li>
-        </ul>
-      </div>
-      <h4>Choose an ipsum</h4>
-
-      <div style="display: none;" data-bunchos-element-row id="bunchos-element-5">
-        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
-      </div>
-      <div style="display: none;" data-bunchos-element-row id="bunchos-element-4">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">tag</a><a data-bunchos-element href="#" class="button button-item secondary radius">new</a><a data-bunchos-element href="#" class="button button-item secondary radius">used</a>
-      </div>
-      <div style="display: none;" data-bunchos-element-row id="bunchos-element-3">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">2</a><a data-bunchos-element href="#" class="button button-item secondary radius">4</a><a data-bunchos-element href="#" class="button button-item secondary radius">6</a><a data-bunchos-element href="#" class="button button-item secondary radius">8</a><a data-bunchos-element href="#" class="button button-item secondary radius">10</a><a data-bunchos-element href="#" class="button button-item secondary radius">12</a><a data-bunchos-element href="#" class="button button-item secondary radius">14</a><a data-bunchos-element href="#" class="button button-item secondary radius">16</a>
-      </div>
-      <div style="display: none;" data-bunchos-element-row id="bunchos-element-2">
-        <a data-bunchos-element href="#" class="button button-item secondary radius">short</a><a data-bunchos-element href="#" class="button button-item secondary radius">long</a><a data-bunchos-element href="#" class="button button-item secondary radius">short polo</a><a data-bunchos-element href="#" class="button button-item secondary radius">long polo</a> 
-      </div>
-      <div data-bunchos-node-row id="bunchos-node-1">
-        <a data-bunchos-node="tops" class="button button-item secondary radius">top</a><a data-bunchos-node="bottoms" class="button button-item secondary radius">bottom</a>
-      </div>
-      <!--       <div class="text-right">
-        <a href="#" class="button secondary radius" id="bunchos-cancel-form">Cancel</a>
-        <a href="#" class="button radius" id="bunchos-save-form">Save</a>
-      </div> -->
-    </div>
-  </div>
 
   <div id="bunchos-myModal" class="reveal-modal medium" data-reveal>
     <h2>Awesome. I have it.</h2>

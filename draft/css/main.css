@@ -1,0 +1,13 @@
+ul.items {
+  margin-left: 0px;
+}
+li {
+  list-style-type: none;
+}
+.button-item {
+  padding: 1.5rem 2rem;
+  margin: 0 0.2rem 1.25rem
+}
+.row {
+  min-width:100% !important;
+}

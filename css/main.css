@@ -1,13 +1,35 @@
-ul.items {
-  margin-left: 0px;
-}
-li {
-  list-style-type: none;
-}
+/*
 .button-item {
   padding: 1.5rem 2rem;
   margin: 0 0.2rem 1.25rem
 }
-.row {
-  min-width:100% !important;
+*/
+ ul.items {
+  margin-left: 0px;
+}
+ul.items li {
+  font-size:20px;
+  color: #6F6F6F;
+  font-weight: lighter;
+}
+li {
+  list-style-type: none;
+}
+.top-bar {
+  margin-bottom: 50px;
+}
+.button {
+  padding: 1.063rem 1.5rem 1rem;
+}
+label {
+  font-size:18px;
+  color: #6F6F6F;
+  font-weight: lighter;
+}
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+label.inline {
+  margin: 0 0 1rem;
+  padding: 1rem 0;
 }
