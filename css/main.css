@@ -20,9 +20,14 @@ li {
 }
 .button {
   padding: 1.063rem 1.5rem 1rem;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #DADADA;
+  border-radius: 7px;
+  color: #6F6F6F !important;
 }
 label {
-  font-size:18px;
+  font-size:22px;
   color: #6F6F6F;
   font-weight: lighter;
 }
@@ -32,4 +37,36 @@ h1, h2, h3 {
 label.inline {
   margin: 0 0 1rem;
   padding: 1rem 0;
+}
+.square {
+  border: 2px solid #DADADA;
+  border-radius: 7px;
+  color: #6F6F6F;
+  font-size: 3rem;
+  height: 60px;
+  line-height: 3rem;
+  text-align: center;
+  width: 60px;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #E7E7E7;
+  display: inline-block;
+}
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid #E7E7E7;
+  display: inline-block;
+}
+textarea {
+  border: 2px solid #DADADA;
+  border-radius: 7px;
+  color: #6F6F6F;
+  height: 60px;
 }
