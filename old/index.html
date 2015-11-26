@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunchos | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link rel="stylesheet" href="css/foundation-icons.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script data-main="app.js" src="lib/require.js"></script>
+</head>
+</head>
+
+<body>
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Bunchos</a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown"> <a href="#">Laura Carvajal</a> 
+          <ul class="dropdown">
+            <li><a href="#">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="active"><a href="#">Donaciones</a>
+        </li>
+        <li><a href="#">Peticiones</a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+
+
+  <div class="row">
+    <div class="medium-8 small-12 columns">
+      <h2>Nueva Donación</h2>
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="pieza" class="right inline">Pieza</label>
+        </div>
+        <div class="small-10 columns" id="pieza">
+          <a class="button secondary radius">x</a>  <a class="button secondary radius">x</a>  <a class="button secondary radius">x</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="size" class="right inline">Size</label>
+        </div>
+        <div class="small-10 columns">
+          <div id="size">
+            <div class="arrow-left"></div>
+            <input class="square"></input>
+            <div class="arrow-right"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="cantidad" class="right inline">Cantidad</label>
+        </div>
+        <div class="small-10 columns" id="cantidad">
+          <div id="size">
+            <div class="arrow-left"></div>
+            <input class="square"></input>
+            <div class="arrow-right"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="small-2 columns text-right">
+          <label for="info" class="right inline">Extras</label>
+        </div>
+        <div class="small-8 columns">
+          <textarea id="info" placeholder="comentarios..."></textarea>
+        </div>
+        <div class="small-2 columns">
+          <a class="button secondary radius"><i class="fi-camera"></i></a></a>
+        </div>
+      </div>
+    </div>
+    <div class="medium-4 small-11 columns panel">
+      <h3>Donaciones activas</h3>
+      <ul class="items">
+        <li>1x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+        <li>3x <a class="button secondary radius"><i class="fi-star"></i></a> talla 2</li>
+        <li>1x <a class="button secondary radius"><i class="fi-star"></i></a> talla 2</li>
+        <li>5x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+        <li>5x <a class="button secondary radius"><i class="fi-star"></i></a> talla 6</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div id="bunchos-myModal" class="reveal-modal medium" data-reveal>
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+    <div class="right">
+      <button class="secondary tiny">Cancel</button>
+      <button class="button tiny">OK</button>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div id="bunchos-deleteModal" class="reveal-modal medium" data-reveal>
+    <h2>Delete this lorem?</h2>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+    <div class="right">
+      <button class="secondary tiny">Cancel</button>
+      <button class="button alert tiny">Delete</button>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <small class="left">© 2012-2013 <a href="http://www.laura-carvajal.com" target="_blank">Laura Carvajal</a>.
+      </small>
+      <small class="right">
+        <strong>ValidJson.com</strong>is built with JS, jQuery, <a target="_blank" href="http://foundation.zurb.com/">Foundation 5</a>, <a target="_blank" href="http://mustache.github.com/">Mustache</a>, <a target="_blank" href="http://requirejs.org/">RequireJS</a>, <a href="http://qunitjs.com/">QUnit</a>and <a href="http://www.loremipsumjs.com/">LoremIpsumJS</a>.
+      </small>
+    </div>
+  </div>
+</body>
+
+</html>
